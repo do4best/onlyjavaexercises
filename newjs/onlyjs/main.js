@@ -24,3 +24,15 @@ let words = "Hello Friend";
 console.log(countwords(words, 'l'))
 let anumber = [2, 5, 3, 1]
 console.log(findMax(anumber))
+const isPalindrome=(str) => {
+    let palendrom = str.split('').reverse().join('')
+    return palendrom === str;
+}
+let sentense = "madam";
+let anotherSen=""
+for (let i = sentense.length; i >= 0; i--){
+    sentense += sentense[i]
+    
+}
+console.log(sentense)
+console.log(isPalindrome(sentense))
