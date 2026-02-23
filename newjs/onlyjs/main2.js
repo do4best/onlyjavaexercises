@@ -19,3 +19,7 @@ while (left <= right) {
     return true;
 }
 console.log(palendrom(words))
+    let x=[2,4,6]
+x.forEach((x) => console.log(x))
+console.log(y);
+var y = 90;
