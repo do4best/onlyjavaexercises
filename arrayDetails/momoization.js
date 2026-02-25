@@ -17,4 +17,4 @@ function Fibnoacci(n) {
     return value;
 }
 
-console.log(Fibnoacci(80))
+console.log(Fibnoacci(5))
