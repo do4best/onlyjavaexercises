@@ -13,5 +13,10 @@ class SingelTon{
         return SingelTon.#instance
     }
 }
-let name = new SingelTon("Friend")
-console.log(SingelTon.getInstance())
+try {
+    let name = new SingelTon("Friend");
+    let second = new SingelTon("Friend")
+    console.log(SingelTon.getInstance());
+} catch (error) {
+    console.error("Error creating singleton:", error);
+}

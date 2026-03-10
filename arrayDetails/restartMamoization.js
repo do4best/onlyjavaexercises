@@ -1,19 +1,29 @@
-let cashe=[]
-function fibnachi(n) {
+
+let cashe = []
+
+let value = 22;
+let another = 13
+cashe[0] = value;
+cashe[1] = another;
+let arr = 0
+arr=cashe[1]
+
+console.log(arr)
+let box=[]
+function fibi(n) {
     let value = 0;
-    if (n in cashe) {
-        value = cashe[n]
-    } else {
+    if (n in box) {
+        value = box[n]
+    }
+    else {
     if (n === 0 || n === 1) {
-         value = n;
+        value = n
     } else {
-        value = fibnachi(n - 1) + fibnachi(n - 2)
-        cashe[n] = value;
+        value = fibi(n - 1) + fibi(n - 2)
+        box[n] = value;
     }    
     }
     
-    return value
-        
+    return value;
 }
-
-console.log(fibnachi(50))
+console.log(fibi(100))

@@ -1,16 +1,8 @@
-class FactoryPattren{
-    createVehicle() {
-        throw new Error("Create Vehicle must be Overriden")
-    }
-    assembly() {
-        const vehicle = this.createVehicle();
-        console.log(`Assemblying ${vehicle.type}`)
-        return vehicle;
-    }
-}
-class CarFactory extends FactoryPattren{
-    createVehicle() {
-        return new CarFactory("Sudan")
-    }
-}
 
+let x = 8;
+try {
+    let name= "go)
+    
+} catch (err) {
+    console.log(err.name)
+}

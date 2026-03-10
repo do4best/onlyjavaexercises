@@ -1,8 +1,8 @@
 let cashe = [];
 function Fibnoacci(n) {
     let value = 0;
-    if (n in cashe) {
-        value = cashe[n];
+    if (n in cashe) { // check if the value in cashe
+        value = cashe[n]; // had the value in cashe object
     } else {
     if (n === 0 || n === 1) {
         value = n;
