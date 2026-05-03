@@ -35,8 +35,36 @@ class LinkedList{
         }
         return current.data;
     }
+    insertAt(index, data) {
+        if (index === 0) {
+            const node = new Node(data);
+            node.next = this.head;
+            this.head = node;
+        } else {
+            let current = this.head;
+            let previous = null;
+            let i = 0;
+            while (i < index) {
+                previous = current;
+                current = current.next;
+                i++;
+            }
+        }
+        return this;
+    }
+    totalLength() {
+        let count = 0;
+        let current = this.head;
+        while (current !== null) {
+            count++;
+            current = current.next;
+        }
+        return count;
+    }
 }
 let linked = new LinkedList();
 console.log(linked)
 linked.add(900)
 linked.printAll()
+linked.insertAt(0, "Great")
+console.log(linked.totalLength())
